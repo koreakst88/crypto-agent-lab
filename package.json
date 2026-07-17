@@ -1,0 +1,13 @@
+{
+  "name": "crypto-agent-lab",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "npm run build && node --test tests/*.test.js"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2"
+  }
+}
