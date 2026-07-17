@@ -10,6 +10,12 @@ const { CollectionValidationStoragePipeline } = require(
   path.join(buildDirectory, "app/index.js"),
 );
 
+const unavailableStorageRetrieveResult = Object.freeze({
+  outcome: "failure",
+  valueState: "absent",
+  reason: Object.freeze({ kind: "storage-not-implemented" }),
+});
+
 class ControlledCollection {
   constructor(result, order) {
     this.result = result;
@@ -55,6 +61,10 @@ class ControlledStorage {
     this.lastRequest = request;
     this.order.push("storage");
     return this.result;
+  }
+
+  retrieve(_request) {
+    return unavailableStorageRetrieveResult;
   }
 }
 

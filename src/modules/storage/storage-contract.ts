@@ -42,6 +42,8 @@ export interface StorageContract<
     request: StorageRetrieveRequest<TRetrievalContext>,
   ) => StorageRetrieveResult<
     TRetrievedDomainInformation,
+    TQualityStatus,
+    TSourceContext,
     TDomainContext,
     TProvenance,
     THistoricalStatus,

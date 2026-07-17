@@ -61,6 +61,8 @@ export class UnavailableStorage<
     _request: StorageRetrieveRequest<TRetrievalContext>,
   ): StorageRetrieveResult<
     TRetrievedDomainInformation,
+    TQualityStatus,
+    TSourceContext,
     TDomainContext,
     TProvenance,
     THistoricalStatus
