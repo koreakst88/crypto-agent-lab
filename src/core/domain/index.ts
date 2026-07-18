@@ -1,4 +1,5 @@
 export type { AssetScope } from "./asset-scope";
+export type { DatasetId, DatasetSummary, MarketDataset } from "./dataset";
 export type {
   Asset,
   AssetId,
@@ -20,6 +21,7 @@ export type {
   ValidationSeverity,
   ValidationStatus,
   ValidationSummary,
+  ValidMarketValidationReport,
 } from "./market-validation";
 export type { Provenance } from "./provenance";
 export type { SourceContext } from "./source-context";
