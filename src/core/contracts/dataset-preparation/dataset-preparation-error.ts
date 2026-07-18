@@ -1,10 +1,6 @@
-import type { MarketValidationReport } from "../../domain";
+import type { InvalidMarketValidationReport } from "../../domain";
 
 export type DatasetPreparationError = {
   readonly kind: "validation-failed";
-  readonly validationReport: MarketValidationReport & {
-    readonly summary: MarketValidationReport["summary"] & {
-      readonly status: "invalid";
-    };
-  };
+  readonly validationReport: InvalidMarketValidationReport;
 };

@@ -15,6 +15,7 @@ export type {
   TradingInstrumentId,
 } from "./market-data";
 export type {
+  InvalidMarketValidationReport,
   MarketValidationReport,
   ValidationFinding,
   ValidationRule,

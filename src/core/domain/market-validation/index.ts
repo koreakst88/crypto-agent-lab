@@ -1,3 +1,4 @@
+export type { InvalidMarketValidationReport } from "./invalid-market-validation-report";
 export type { ValidationFinding } from "./validation-finding";
 export type { MarketValidationReport } from "./validation-result";
 export type { ValidationRule } from "./validation-rule";
