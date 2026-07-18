@@ -13,6 +13,14 @@ export type {
   TradingInstrument,
   TradingInstrumentId,
 } from "./market-data";
+export type {
+  MarketValidationReport,
+  ValidationFinding,
+  ValidationRule,
+  ValidationSeverity,
+  ValidationStatus,
+  ValidationSummary,
+} from "./market-validation";
 export type { Provenance } from "./provenance";
 export type { SourceContext } from "./source-context";
 export type { TimeframeScope } from "./timeframe-scope";
