@@ -1,4 +1,5 @@
 export type {
+  CompleteResult,
   FailureResult,
   Result,
   ResultBase,

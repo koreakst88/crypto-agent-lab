@@ -41,3 +41,9 @@ export type Result<
   TReason = string,
   TPartialValue = TValue,
 > = SuccessResult<TValue> | FailureResult<TReason, TPartialValue>;
+
+export type CompleteResult<TValue, TReason = string> = Extract<
+  Result<TValue, TReason, never>,
+  | { readonly outcome: "success"; readonly valueState: "present" }
+  | { readonly outcome: "failure"; readonly valueState: "absent" }
+>;
