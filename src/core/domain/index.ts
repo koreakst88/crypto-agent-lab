@@ -1,6 +1,21 @@
 export type { AssetScope } from "./asset-scope";
 export type { DatasetId, DatasetSummary, MarketDataset } from "./dataset";
 export type {
+  Indicator,
+  IndicatorDefinition,
+  IndicatorDefinitionId,
+  IndicatorDefinitionVersion,
+  IndicatorInput,
+  IndicatorMeasurement,
+  IndicatorNumericValue,
+  IndicatorOutputKind,
+  IndicatorParameters,
+  IndicatorParameterValue,
+  IndicatorSeries,
+  IndicatorUnavailabilityReason,
+  IndicatorValue,
+} from "./indicator";
+export type {
   Asset,
   AssetId,
   DecimalValue,
